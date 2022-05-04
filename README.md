@@ -1,7 +1,7 @@
 # Web-Teknolojileri
 ## Proje Amacı
 *HTML,CSS,Javascript vb. kulanilarak bir web sitesi gelistirilmesi.*
-## Proje Detayları
+## Proje Detayları 
 
 •	Kendi memleketimi tanıtan kişisel bir web sitesi ugulaması geliştirilecektir.
 
