@@ -1,3 +1,5 @@
+<?php include "login-kontrol.php";?>
+
 <!doctype html>
 <html lang="tr">
   <head>
@@ -8,7 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <title>Hakkımda</title>
+    <title>Login</title>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -40,7 +42,7 @@
                           <a class="nav-link" href="sehrim.html"><b>Şehrim</b></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="takimimiz.html"><b>Takımımız</b></a>
+                            <a class="nav-link" href="takimimiz.html"><b>Takmımız</b></a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="login.php"><b>Login</b></a>
@@ -54,52 +56,27 @@
               </nav>
             </div>
         </header>
+ 
+        <form class="" action="login-kontrol.php" method="post">
+            <div class="form">
+            <input class="info" type="text" name="mail" placeholder="E-posta adresinizi giriniz" value="" required><br>
+            <input class="info" type="password" name="pass" placeholder="Parolanızı Giriniz" value="" required><br>
+            <input type="submit" name="gonder" value="Giriş"><br>
+            </div>
+        </form>  
         
-        <section id="sub-container">
-        <section id="sub-title">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1>HAKKIMDA</h1>
-                    </div>
+        <div class="container">
+            <div class="row margin-bottom-login">
+                <div class="col-md-12">
+                    <br><br><br><h5>Üyelik Sistememimiz şuanda sadece admin için vardır</h5>
                 </div>
             </div>
-        </section>
-        <section id="sub-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="images/hakkımda1.jpg" height="300" width="300" class="img-fluid"/>
-                    </div>
-                    <div class="col-md-8">
-                        <p>Turgay Teymurov, Azerbaycan'ın Ağcabedi ilçesi'nin Avşar köyünde 2001
-         yılında doğdum.İlköğretimimi Avşar köyünde Nizami Gancavi İlkokulunda, liseyi 
-         ise Ağdaş Özel Türk Liseyinde tamamladım.Ardından Sakarya Üniversitesi Bilgisayar
-          Mühendisliğini kazandım ve eğitim hayatıma üniversite 3. Sınıf öğrencisi olarak
-           devam ediyorum. </p>
-                    </div> 
+            <div class="row margin-bottom-login">
+                <div class="col-md-12">
+                    <br><h6>Yakın zamanda kullanıcılar içinde üyelik sistemi gelecektir.</h6>
                 </div>
-                <div class="row margin-hakkımda">
-                    <div class="col-md-8">
-					<br>
-                      <h4>Hobilerim</h4><br>
-                        <p>Kitap okumayı, futbol maçı izlemeyi, halısahaya gitmeyi ve balık tutmayı seviyorum. 
-						Bunlarandan en sevdiğim ilk yazdığım olan kitap okumak,
-						kitap hayatımın her gününde yer almalı her gün düzenli olarak en az 25 sayfa kitap okurum. 
-						Ve karşıma çıkan her insana okumayı öneririm. 
-                          <br><br>
-                       
-                        </p> 
-                    </div>
-                    <div class="col-md-4">
-                      <img src="images/hakkımda2.jpg" height="300" width="300" class="img-fluid"/>
-                    </div> 
-                </div>
-                
             </div>
-        </section>
-        </section>
-        
+        </div>
         <div class="footer text-center">
             <p>Made by Turgay Teymurov </p>
             </div>

@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="tr">
   <head>
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <title>Hakkımda</title>
+    <title>İletişim Veri</title>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -54,54 +55,26 @@
               </nav>
             </div>
         </header>
-        
-        <section id="sub-container">
-        <section id="sub-title">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1>HAKKIMDA</h1>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="sub-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="images/hakkımda1.jpg" height="300" width="300" class="img-fluid"/>
-                    </div>
-                    <div class="col-md-8">
-                        <p>Turgay Teymurov, Azerbaycan'ın Ağcabedi ilçesi'nin Avşar köyünde 2001
-         yılında doğdum.İlköğretimimi Avşar köyünde Nizami Gancavi İlkokulunda, liseyi 
-         ise Ağdaş Özel Türk Liseyinde tamamladım.Ardından Sakarya Üniversitesi Bilgisayar
-          Mühendisliğini kazandım ve eğitim hayatıma üniversite 3. Sınıf öğrencisi olarak
-           devam ediyorum. </p>
-                    </div> 
-                </div>
-                <div class="row margin-hakkımda">
-                    <div class="col-md-8">
-					<br>
-                      <h4>Hobilerim</h4><br>
-                        <p>Kitap okumayı, futbol maçı izlemeyi, halısahaya gitmeyi ve balık tutmayı seviyorum. 
-						Bunlarandan en sevdiğim ilk yazdığım olan kitap okumak,
-						kitap hayatımın her gününde yer almalı her gün düzenli olarak en az 25 sayfa kitap okurum. 
-						Ve karşıma çıkan her insana okumayı öneririm. 
-                          <br><br>
-                       
-                        </p> 
-                    </div>
-                    <div class="col-md-4">
-                      <img src="images/hakkımda2.jpg" height="300" width="300" class="img-fluid"/>
-                    </div> 
-                </div>
-                
-            </div>
-        </section>
-        </section>
-        
-        <div class="footer text-center">
-            <p>Made by Turgay Teymurov </p>
-            </div>
+ 
+        <div class="ciktilar">
+        <?php 
+        $isim=$_POST["isim"];
+        $mail=$_POST["e-mail"];
+        $phone=$_POST["phone"];
+        $message=$_POST["message"];
+
+
+        print "İsim: $isim" ;
+        echo '<br>' ;
+        print "Mail: $mail" ;
+        echo '<br>' ;
+        print "Telefon: $phone" ;
+        echo '<br>' ;
+        print "Mesaj: $message" ;
+        echo '<br>' ;
+
+        ?>
+        </div>
+
   </body>
 </html>
